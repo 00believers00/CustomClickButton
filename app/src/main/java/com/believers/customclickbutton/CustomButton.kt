@@ -10,6 +10,7 @@ class CustomButton(context: Context?, attrs: AttributeSet?) : AppCompatButton(co
 
     private var backgroundPressed = -1
     private var backgroundDefault = -1
+    private  var isEnabel = false
 
     override fun setPressed(pressed: Boolean) {
         super.setPressed(pressed)
@@ -38,6 +39,7 @@ fun setBackgroundCustom(default:Int,pressed:Int){
 
     this.backgroundDefault = default
     this.backgroundPressed = pressed
+
 }
 
 
